@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivProduk"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/ex_produk" />
+
+            <TextView
+                android:id="@+id/tvnamaProduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivProduk"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinssb"
+                android:text="Telo's"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginStart="20dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvnamaProduk"
+                android:text="Produk UMKM Jogja" />
+            <TextView
+                android:id="@+id/tvHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/searchbar"
+                android:text="Rp.15.000"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/black"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
